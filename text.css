@@ -1,0 +1,109 @@
+
+*,
+**::after,
+**::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: blueviolet;
+}
+
+.container {
+    width: 24rem;
+    border-radius: 7px;
+    padding: 20px 30px;
+    background-color: white;
+}
+
+.container header {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container form {
+    margin: 35px 0 20px;
+}
+
+form .input-area {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+}
+
+form .input-area label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+textarea {
+    border: transparent;
+    background-color: whitesmoke;
+    outline: none;
+}
+
+from :where(textarea, select, button) {
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+form .input-area textarea {
+    resize: none;
+    height: 6.9rem;
+    font-size: 15px;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid #999;
+}
+
+form .input-area .voice-box {
+    height: 47px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border:1px solid #999;
+}
+
+select {
+    width: 48rem;
+    height: 3rem;
+    border: transparent;
+    outline: none;
+    background-color: whitesmoke;
+}
+option {
+    border: transparent;
+    outline: none;
+}
+
+form .input-area select {
+    font-size: 0.8rem;
+}
+
+form button {
+    height: 3.2rem;
+    margin-top: 0.6rem;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    background: blueviolet;
+}
+
+button {
+    outline: none;
+    text-decoration: none;
+    border: transparent;
+    width: 24rem;
+}
